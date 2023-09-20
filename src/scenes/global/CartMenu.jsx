@@ -1,4 +1,4 @@
-import { Box, Button, Divider, Icon, IconButton, Typography } from "@mui/material";
+import { Box, Button, Divider, IconButton, Typography } from "@mui/material";
 import { useSelector, useDispatch } from 'react-redux';
 import CloseIcon from '@mui/icons-material/Close';
 import AddIcon from '@mui/icons-material/Add';
@@ -71,7 +71,7 @@ const CartMenu = () => {
                                             alt={item?.name}
                                             width="123px"
                                             height="164px"
-                                            src={`https://strapi-ep68.onrender.com/${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+                                            src={`${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
                                         />
                                     </Box>
                                     <Box flex="1 1 60%">
